@@ -9,7 +9,7 @@ function scrollToTop() {
 function scrollToProjects() {
     // Scroll to the projects section with a 100px offset
     window.scrollTo({
-        top: document.getElementById("projects").offsetTop - 150,
+        top: document.getElementById("projects").offsetTop - 100,
         behavior: "smooth"
     });
 }
