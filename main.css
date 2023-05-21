@@ -1,0 +1,193 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Navigation */
+.navigation {
+    position: fixed;
+    min-width: 100vw;
+    transition: background-color 300ms ease-in-out;
+    z-index: 99;
+}
+
+.navbar-scrolled {
+    background-color: #000000;
+    /* Replace with your desired background color */
+    transition: background-color 300ms ease-in-out;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-logo {
+    display: flex;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-left: 40px;
+    margin-right: 40px;
+    font: normal normal bold 35px/43px Montserrat, sans-serif;
+}
+
+.nav-list li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-coffee {
+    background-color: #EB4D36;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font: normal normal bold 35px/43px Montserrat, sans-serif;
+}
+
+/*  */
+/*  */
+/*  */
+/* Hero */
+/*  */
+/*  */
+/*  */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px 0px 0px 0px;
+    height: 93vh;
+}
+
+.hero-background-text {
+    position: absolute;
+    color: #ffffff;
+    text-align: left;
+    font: normal normal bold 497px/606px Montserrat, sans-serif;
+    letter-spacing: 0px;
+    opacity: 0.13;
+    z-index: -1;
+    left: -75px;
+    padding: 0;
+    margin: 0;
+}
+
+/* .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+} */
+
+.hero-for-text {
+    margin-top: 235px;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-align: left;
+    font: normal normal 600 98px/120px Montserrat, sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.68;
+    z-index: 0;
+}
+
+.hero-name {
+    color: #FFFFFF;
+    text-align: left;
+    font: normal normal bold 164px/200px Montserrat, sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    line-height: 135px;
+}
+
+.hero-position {
+    color: #FFFFFF;
+    text-align: left;
+    font: normal normal 500 33px/40px Montserrat, sans-serif;
+    letter-spacing: 0px;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+/* .hero-background-image {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.hero-scroll-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    width: 100%;
+    gap: 10px;
+}
+
+.hero-scroll-text {
+    text-align: center;
+    font: normal normal 300 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.hero-scroll-icon {
+    cursor: pointer;
+}
+
+/* Projects */
+
+/* Tools */
+
+/* About me */
+
+/* Coffee */
+
+/* Footer */

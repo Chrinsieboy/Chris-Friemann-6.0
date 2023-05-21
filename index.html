@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio | Chris Friemann</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src='main.js'></script>
+</head>
+
+<body>
+    <nav class="navigation" id="navbar">
+        <div class="container nav-container">
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="nav-logo">
+                <!-- Logo needs to be fixed for height/width picture itself -->
+                <img src="./icons/logo.svg" width="100px" height="100px" alt="logo">
+                <!-- Logo needs to be fixed for height/width picture itself -->
+            </a>
+            <ul class="nav-list">
+                <li>
+                    <a href="javascript:void(0)" onclick="scrollToProjects()"> Projects </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" onclick="scrollToAboutMe()"> About me </a>
+                </li>
+                <li class="nav-coffee">
+                    <a href="javascript:void(0)" onclick="scrollToCoffee()"> Coffee&quest; </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero" id="hero">
+            <span class="hero-background-text">Hello</span>
+            <div class="hero-text">
+                <h2 class="hero-for-text">I&apos;m</h2>
+                <h1 class="hero-name">Chris Friemann</h1>
+                <h3 class="hero-position">Student Software Developer</h3>
+            </div>
+            <div class="hero-background-image"></div>
+            <div class="hero-scroll-down">
+                <a href="javascript:void(0)" class="hero-scroll-text" onclick="scrollToProjects()">
+                    Scroll down for my projects
+                </a>
+                <img class="hero-scroll-icon" src="./icons/arrow.svg" onclick="scrollToProjects()" alt="arrow">
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/placeholder.png" alt="">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/placeholder2.png" alt="">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/placeholder.png" alt="">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/placeholder2.png" alt="">
+                    <h2>Project 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/placeholder.png" alt="">
+                    <h2>Project 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class="slide">
+                    <img src="./images/placeholder2.png" alt="">
+                    <h2>Project 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tools" id="tools">
+            <h1>Languages &sol; Tools</h1>
+            <p>My qualities</p>
+            <div class="tools-bar">
+                <img src="./icons/laravel.svg" alt="Laravel">
+                <img src="./icons/css.svg" alt="CSS">
+                <img src="./icons/php.svg" alt="PHP">
+                <img src="./icons/html.svg" alt="HTML">
+                <img src="./icons/tailwindcss.svg" alt="Tailwind CSS">
+                <img src="./icons/svelte.svg" alt="Svelte">
+                <img src="./icons/vuejs.svg" alt="VueJS">
+                <img src="./icons/sql.svg" alt="SQL">
+            </div>
+        </div>
+        <div class="about-me" id="about-me">
+            <h1 class="about-me-title">About me</h1>
+            <div class="about-me-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quasi provident vitae est impedit
+                    ipsum corrupti optio at iure? Dolorum, repellat! Aperiam ab ad quasi praesentium nam obcaecati a
+                    aliquid.</p>
+                <img src="./images/placeholder3.png" alt="">
+            </div>
+        </div>
+        <div class="coffee" id="coffee">
+            <h1>Contact</h1>
+            <span>Yes please</span>
+            <div class="contact-content">
+                <img src="./icons/linkedin.svg" alt="LinkedIn">
+                <img src="./icons/github.svg" alt="Github">
+                <img src="./icons/mail.svg" alt="Mail me">
+            </div>
+            <p>chrisfriemann1@gmail.com</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2023 Chris Friemann</p>
+    </footer>
+</body>
+<script lang="js">
+    window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('navbar');
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 50) { // Replace X with the number of pixels you want to scroll
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    });
+</script>
+
+</html>
