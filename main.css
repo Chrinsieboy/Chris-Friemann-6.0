@@ -184,6 +184,14 @@ a {
 
 /* Projects */
 
+.glide {
+    /*  */
+}
+
+.glide__slide--active {
+    z-index: 1;
+}
+
 /* Tools */
 
 /* About me */
