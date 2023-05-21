@@ -9,6 +9,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/glide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css">
 </head>
 
 <body>
@@ -49,37 +51,32 @@
             </div>
         </div>
         <div class="projects" id="projects">
-            <h1>Projects</h1>
-            <div class="slider">
-                <div class="slide">
-                    <img src="./images/placeholder.png" alt="">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <div class="slide">
+                            <img src="./images/placeholder.png" alt="placeholder">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/placeholder2.png" alt="placeholder2">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/placeholder.png" alt="placeholder">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/placeholder2.png" alt="placeholder2">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/placeholder.png" alt="placeholder">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/placeholder2.png" alt="placeholder2">
+                        </div>
+                    </ul>
                 </div>
-                <div class="slide">
-                    <img src="./images/placeholder2.png" alt="">
-                    <h2>Project 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="slide">
-                    <img src="./images/placeholder.png" alt="">
-                    <h2>Project 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="slide">
-                    <img src="./images/placeholder2.png" alt="">
-                    <h2>Project 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="slide">
-                    <img src="./images/placeholder.png" alt="">
-                    <h2>Project 5</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                </div>
-                <div class="slide">
-                    <img src="./images/placeholder2.png" alt="">
-                    <h2>Project 6</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                 </div>
             </div>
         </div>
@@ -100,9 +97,8 @@
         <div class="about-me" id="about-me">
             <h1 class="about-me-title">About me</h1>
             <div class="about-me-content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quasi provident vitae est impedit
-                    ipsum corrupti optio at iure? Dolorum, repellat! Aperiam ab ad quasi praesentium nam obcaecati a
-                    aliquid.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quasi provident vitae est impedit ipsum
+                    corrupti optio at iure? Dolorum, repellat! Aperiam ab ad quasi praesentium nam obcaecati a aliquid.</p>
                 <img src="./images/placeholder3.png" alt="">
             </div>
         </div>
@@ -132,6 +128,19 @@
             navbar.classList.remove('navbar-scrolled');
         }
     });
+</script>
+<script>
+    new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        focusAt: 'center',
+        keyboard: false,
+        peek: {
+            before: 0,
+            after: 0
+        },
+    }).mount()
 </script>
 
 </html>
