@@ -184,6 +184,20 @@ a {
 
 /* Projects */
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-title {
+    font: normal normal bold 78px/120px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
 .glide {
     /*  */
 }
