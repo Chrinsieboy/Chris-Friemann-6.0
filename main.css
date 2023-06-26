@@ -11,6 +11,7 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -199,11 +200,31 @@ a {
 }
 
 .glide {
+    overflow: visible;
+}
+
+.glide__track {
     /*  */
+    overflow: visible !important;
+}
+
+.glide__slides {
+    overflow: visible;
+}
+
+.glide__slide {
+    transform: scale(0.9);
+    border-radius: 56px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .glide__slide--active {
     z-index: 1;
+    transform: scale(1);
+    border-radius: 56px;
 }
 
 /* Tools */
