@@ -29,3 +29,13 @@ function scrollToCoffee() {
         behavior: "smooth"
     });
 }
+
+async function fetchApi() {
+    const response = await fetch('https://api.capy.lol/v1/capybara?json=true');
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
+
+// Get the api on page load
+fetchApi();
