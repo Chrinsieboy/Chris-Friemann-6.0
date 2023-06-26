@@ -135,13 +135,17 @@
     new Glide('.glide', {
         type: 'carousel',
         startAt: 0,
-        perView: 3,
+        perView: 2,
         focusAt: 'center',
         keyboard: false,
+        autoplay: 5000,
+        animationDuration: 500,
+        animationTimingFunc: 'ease-in-out',
         peek: {
             before: 0,
             after: 0
         },
+        gap: -200,
     }).mount()
 </script>
 
