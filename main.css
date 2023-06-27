@@ -219,6 +219,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 563px !important;
 }
 
 .glide__slide--active {
@@ -227,6 +228,12 @@ a {
     border-radius: 56px;
 }
 
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
 /* Tools */
 
 /* About me */
