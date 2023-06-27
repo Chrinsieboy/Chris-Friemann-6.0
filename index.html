@@ -55,25 +55,8 @@
             <h1 class="projects-title">Projects</h1>
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <div class="glide__slide">
-                            <img src="./images/placeholder.png" alt="placeholder">
-                        </div>
-                        <div class="glide__slide">
-                            <img src="./images/placeholder2.png" alt="placeholder2">
-                        </div>
-                        <div class="glide__slide">
-                            <img src="./images/placeholder.png" alt="placeholder">
-                        </div>
-                        <div class="glide__slide">
-                            <img src="./images/placeholder2.png" alt="placeholder2">
-                        </div>
-                        <div class="glide__slide">
-                            <img src="./images/placeholder.png" alt="placeholder">
-                        </div>
-                        <div class="glide__slide">
-                            <img src="./images/placeholder2.png" alt="placeholder2">
-                        </div>
+                    <ul id="carousel" class="glide__slides">
+                        <!-- This will be filled with api data -->
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
@@ -130,23 +113,6 @@
             navbar.classList.remove('navbar-scrolled');
         }
     });
-</script>
-<script>
-    new Glide('.glide', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 2,
-        focusAt: 'center',
-        keyboard: false,
-        autoplay: 5000,
-        animationDuration: 500,
-        animationTimingFunc: 'ease-in-out',
-        peek: {
-            before: 0,
-            after: 0
-        },
-        gap: -200,
-    }).mount()
 </script>
 
 </html>
