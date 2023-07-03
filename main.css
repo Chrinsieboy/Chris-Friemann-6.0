@@ -190,6 +190,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .projects-title {
@@ -220,12 +221,21 @@ a {
     justify-content: center;
     align-items: center;
     height: 563px !important;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .glide__slide--active {
     z-index: 1;
     transform: scale(1);
     border-radius: 56px;
+    opacity: 1;
+}
+
+.glide__slide--active,
+.glide__slide--active + .glide__slide,
+.glide__slide--active ~ .glide__slide {
+    opacity: 1;
 }
 
 .project-image {
@@ -234,6 +244,7 @@ a {
     object-fit: cover;
     object-position: center center;
 }
+
 /* Tools */
 
 /* About me */
